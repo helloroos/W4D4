@@ -8,21 +8,31 @@ describe "#my_uniq" do
 end
 
 
-# describe Array do 
+describe Array do 
 
-#   describe "#two_sum" do
-#     let(:arr) { [-1, 0, 2, -2, 1] }
-#     p arr
+  describe "#two_sum" do
+    let(:arr) { [-1, 0, 2, -2, 1] }
 
-#     # it "does not take in any arguments" do
-#     #   # expect { arr.two_sum }.to raise_error("Expect no argument")
-#     #   expect(arr).to not_receive
-#     # end
+    # it "does not take in any arguments" do
+    #   # expect { arr.two_sum }.to raise_error("Expect no argument")
+    #   expect(arr).to not_receive
+    # end
 
-#     it "returns pairs of indices correctly" do
-#       expect(arr.two_sum).to eq([[0, 4], [2, 3]])
-#     end
+    it "returns pairs of indices correctly" do
+      expect(arr.two_sum).to eq([[0, 4], [2, 3]])
+    end
+  end
 
-#   end
+end
 
-# end
+describe "#my_transpose" do 
+  let(:matrix) {[[0, 1, 2],[3, 4, 5], [6, 7, 8]]}
+
+  it "should convert rows into columns" do
+    expect(my_transpose(matrix)).to eq ([[0, 3, 6],[1, 4, 7],[2, 5, 8]])
+  end
+end
+
+describe "#stock_picker" do
+  
+end
