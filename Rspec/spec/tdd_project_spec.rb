@@ -34,5 +34,9 @@ describe "#my_transpose" do
 end
 
 describe "#stock_picker" do
-  
+  let(:stock_prices) { [5, 8, 3, 77, 2, 1, 23, 3] }
+
+  it "returns the most profitable pair of days" do
+    expect(stock_picker(stock_prices)).to eq([2, 3])
+  end
 end
